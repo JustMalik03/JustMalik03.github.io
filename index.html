@@ -7,13 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.2/css/all.css">
     <style>
+        :root {
+            --font-color: grey;
+            --header-color: linen;
+        }
         body {
             font-size: 1.1rem;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: var(--font-color);
         }
 
-        h2 {
+        h2, h3 {
             text-align: center;
+            color: var(--header-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--font-color);
+        }
+
+        a:hover {
+            color: var(--header-color);
+            transition: 0.2s ease-in-out;
         }
 
         .socials-section {
@@ -27,44 +43,51 @@
 
         .about-section {
             position: absolute;
-            right: 0;
+            right: 10px;
             top: 0;
             height: 100vh;
-            width: 50%;
+            width: 48%;
+            text-align: center;
         }
+
         .social-links {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
             align-items: center;
             inset: 0px;
             margin: 0 auto;
             width: 60%;
             height: 50px;
-            border: 1px solid red
         }
     </style>
-    
+
 </head>
 
 <body>
     <div class="socials-section">
         <h2>Contact Me</h2>
+        <h3>Malik Animashaun</h3>
         <div class="social-links">
-            <i class="fab fa-github-square"></i>
+            <a href="https://github.com/JustMalik03">
+                <i class="fab fa-github-square"></i>
+                Github
+            </a>
+            <a href="mailto:abdulmalikanimashaun5@gmail.com">
+               <i class="fas fa-at"></i>
+                Email Me
+            </a>
         </div>
     </div>
     <div class="about-section">
         <h2>About Me</h2>
         <section>
             <p>
-                Hello, my name is Malik Animashaun and I am currently a senior at Towson Univeristy with an Associates
-                Degree in Computer Science.
-                My hobbies consist of traditional and digital drawing and playing video games ocassionaly. I am hoping
-                to be either a full-stack developer or a software engineer in the future.
-                I am African-American and can speak a little bit of Yoruba, but I am not fluent in the language yet. I
-                have experience using frontend frameworks such as React. I am just now starting to learn Node.js and
-                Express.js but I a familar with HTML/CSS, Java, Javascript, and Python.
+                Hello, I am currently a senior student at Towson Univeristy with an Associates
+                Degree in Computer Science. I have just begun creating websites in React and am currently learning Node.js and Express.js.
             </p>
+            <h2>Info</h2>
+            <a href="https://docs.google.com/document/d/1kqpIcHurqZVlZDxzqavu_BDWj4SuxPoJGZlHPzmZd4Y/edit?usp=sharing">Click here for resume</a>
         </section>
     </div>
 </body>
