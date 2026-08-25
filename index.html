@@ -10,15 +10,18 @@
         :root {
             --font-color: grey;
             --header-color: linen;
+            --bg-color: rgb(1, 1, 35)
         }
+
         body {
             font-size: 1.1rem;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: var(--font-color);
-            background-color: rgb(1, 1, 35);
+            background-color: var(--bg-color)
         }
 
-        h2, h3 {
+        h2,
+        h3 {
             color: var(--header-color);
         }
 
@@ -35,27 +38,30 @@
         .socials-section {
             position: absolute;
             height: 100vh;
-            width: 48%;
+            width: 40%;
             left: 0;
             top: 0;
             border-right: 3px solid grey;
+            background-color: var(--bg-color);
+            z-index: 1
         }
 
-        .socials-section h2, h3 {
+        .socials-section h2,
+        h3 {
             text-align: center;
         }
 
         .about-section {
             position: absolute;
-            right: 10px;
+            right: 40px;
             top: 0;
             height: 100vh;
-            width: 48%;
-            text-align: left;
+            width: 50%;
+            background-color: var(--bg-color);
         }
 
-        .about-section h3 {
-            text-align: left
+        .about-section h3, p {
+            text-align: left;
         }
 
         .social-links {
@@ -82,7 +88,7 @@
                 Github
             </a>
             <a href="mailto:abdulmalikanimashaun5@gmail.com">
-               <i class="fas fa-at"></i>
+                <i class="fas fa-at"></i>
                 Email Me
             </a>
         </div>
@@ -92,7 +98,8 @@
         <section>
             <p>
                 Hello, I am currently a senior student at Towson Univeristy with an Associates
-                Degree in Computer Science. I have just begun creating websites in React and am currently learning Node.js and Express.js.
+                Degree in Computer Science. I have just begun creating websites in React and am currently learning
+                Node.js and Express.js.
             </p>
             <h3>Completed Courses</h3>
             <ul>
@@ -101,7 +108,8 @@
                 <li>COSC-336 Data Structures and Algorithm Analysis</li>
             </ul>
             <h3>Info</h3>
-            <a href="https://docs.google.com/document/d/1kqpIcHurqZVlZDxzqavu_BDWj4SuxPoJGZlHPzmZd4Y/edit?usp=sharing">Click here for resume</a>
+            <a href="https://docs.google.com/document/d/1kqpIcHurqZVlZDxzqavu_BDWj4SuxPoJGZlHPzmZd4Y/edit?usp=sharing">Click
+                here for resume</a>
         </section>
     </div>
 </body>
